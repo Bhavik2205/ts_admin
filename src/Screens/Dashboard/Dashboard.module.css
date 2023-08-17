@@ -1,0 +1,19 @@
+.border {
+  border-right: 1px solid #000;
+}
+
+@media (max-width: 992px) {
+  .border {
+    border-right: 0;
+    border-bottom: 1px solid #000;
+  }
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
