@@ -6,9 +6,9 @@ import Paginations from "Components/Paginations/Paginations";
 
 const Users = () => {
   return (
-    <div className="padding__container d-flex flex-column align-item-center justify-content-between">
+    <div className="padding__container has_remove-scroll d-flex flex-column align-item-center justify-content-between">
       <div>
-        <Row className="g-4 align-items-end mb-5">
+        <Row className="g-4 align-items-end mb-3">
           <Col lg={12} xl={6}>
             <Row className="g-4 align-items-center">
               <Col md={12} lg={4}>
@@ -303,70 +303,6 @@ const Users = () => {
               </td>
               <td>
                 <div className="success-badge">Admin</div>
-              </td>
-              <td>
-                <span className="text-grey">olivia@untitledui.com</span>
-              </td>
-              <td>
-                <span className="text-grey">12/01/2022</span>
-              </td>
-              <td>
-                <Form.Check type="switch" className="form-switch" />
-              </td>
-              <td>
-                <div className="d-flex align-items-center gap-3">
-                  <button className="btn border-0 p-0 btn-auto" disabled>
-                    <FeatherIcon icon="trash-2" size={18} />
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className="d-flex align-items-center gap-3">
-                  <Form.Check type="checkbox" className="m-0 form-check" />
-                  <div className="table__has-img d-flex align-items-center gap-3">
-                    <div className="img-box" title="OR">
-                      <img src="" alt="" />
-                    </div>
-                    <span className="text-black">Olivia Rhye</span>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div className="warning-badge">Super Admin</div>
-              </td>
-              <td>
-                <span className="text-grey">olivia@untitledui.com</span>
-              </td>
-              <td>
-                <span className="text-grey">12/01/2022</span>
-              </td>
-              <td>
-                <Form.Check type="switch" className="form-switch" />
-              </td>
-              <td>
-                <div className="d-flex align-items-center gap-3">
-                  <button className="btn border-0 p-0 btn-auto" disabled>
-                    <FeatherIcon icon="trash-2" size={18} />
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className="d-flex align-items-center gap-3">
-                  <Form.Check type="checkbox" className="m-0 form-check" />
-                  <div className="table__has-img d-flex align-items-center gap-3">
-                    <div className="img-box" title="OR">
-                      <img src="" alt="" />
-                    </div>
-                    <span className="text-black">Olivia Rhye</span>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div className="warning-badge">Super Admin</div>
               </td>
               <td>
                 <span className="text-grey">olivia@untitledui.com</span>

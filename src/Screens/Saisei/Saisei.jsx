@@ -3,6 +3,7 @@ import { Col, Container, Form, Row, Table } from "react-bootstrap";
 import formStyle from "Styles/FormControl.module.css";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import Paginations from "Components/Paginations/Paginations";
+import { Link } from "react-router-dom";
 
 const Saisei = () => {
   return (
@@ -10,7 +11,7 @@ const Saisei = () => {
       <Container fluid>
         <div className="padding__container d-flex flex-column align-item-center justify-content-between">
           <div>
-            <Row className="g-4 align-items-end mb-5">
+            <Row className="g-4 align-items-end mb-3">
               <Col lg={12} xl={6}>
                 <Row className="g-4">
                   <Col md={12} lg={4}>
@@ -117,9 +118,9 @@ const Saisei = () => {
                       <button className="btn border-0 p-0 btn-auto" disabled>
                         <FeatherIcon icon="trash-2" size={18} />
                       </button>
-                      <button className="btn border-0 p-0 btn-auto">
+                      <Link to="/user-prfile" className="btn border-0 p-0 btn-auto">
                         <FeatherIcon icon="edit-2" size={18} />
-                      </button>
+                      </Link>
                     </div>
                   </td>
                 </tr>
@@ -158,9 +159,9 @@ const Saisei = () => {
                       <button className="btn border-0 p-0 btn-auto" disabled>
                         <FeatherIcon icon="trash-2" size={18} />
                       </button>
-                      <button className="btn border-0 p-0 btn-auto">
+                      <Link to="/user-prfile" className="btn border-0 p-0 btn-auto">
                         <FeatherIcon icon="edit-2" size={18} />
-                      </button>
+                      </Link>
                     </div>
                   </td>
                 </tr>
@@ -199,9 +200,9 @@ const Saisei = () => {
                       <button className="btn border-0 p-0 btn-auto" disabled>
                         <FeatherIcon icon="trash-2" size={18} />
                       </button>
-                      <button className="btn border-0 p-0 btn-auto">
+                      <Link to="/user-prfile" className="btn border-0 p-0 btn-auto">
                         <FeatherIcon icon="edit-2" size={18} />
-                      </button>
+                      </Link>
                     </div>
                   </td>
                 </tr>
@@ -240,9 +241,9 @@ const Saisei = () => {
                       <button className="btn border-0 p-0 btn-auto" disabled>
                         <FeatherIcon icon="trash-2" size={18} />
                       </button>
-                      <button className="btn border-0 p-0 btn-auto">
+                      <Link to="/user-prfile" className="btn border-0 p-0 btn-auto">
                         <FeatherIcon icon="edit-2" size={18} />
-                      </button>
+                      </Link>
                     </div>
                   </td>
                 </tr>
@@ -281,9 +282,9 @@ const Saisei = () => {
                       <button className="btn border-0 p-0 btn-auto" disabled>
                         <FeatherIcon icon="trash-2" size={18} />
                       </button>
-                      <button className="btn border-0 p-0 btn-auto">
+                      <Link to="/user-prfile" className="btn border-0 p-0 btn-auto">
                         <FeatherIcon icon="edit-2" size={18} />
-                      </button>
+                      </Link>
                     </div>
                   </td>
                 </tr>
@@ -322,9 +323,9 @@ const Saisei = () => {
                       <button className="btn border-0 p-0 btn-auto" disabled>
                         <FeatherIcon icon="trash-2" size={18} />
                       </button>
-                      <button className="btn border-0 p-0 btn-auto">
+                      <Link to="/user-prfile" className="btn border-0 p-0 btn-auto">
                         <FeatherIcon icon="edit-2" size={18} />
-                      </button>
+                      </Link>
                     </div>
                   </td>
                 </tr>
@@ -363,9 +364,9 @@ const Saisei = () => {
                       <button className="btn border-0 p-0 btn-auto" disabled>
                         <FeatherIcon icon="trash-2" size={18} />
                       </button>
-                      <button className="btn border-0 p-0 btn-auto">
+                      <Link to="/user-prfile" className="btn border-0 p-0 btn-auto">
                         <FeatherIcon icon="edit-2" size={18} />
-                      </button>
+                      </Link>
                     </div>
                   </td>
                 </tr>
@@ -404,91 +405,9 @@ const Saisei = () => {
                       <button className="btn border-0 p-0 btn-auto" disabled>
                         <FeatherIcon icon="trash-2" size={18} />
                       </button>
-                      <button className="btn border-0 p-0 btn-auto">
+                      <Link to="/user-prfile" className="btn border-0 p-0 btn-auto">
                         <FeatherIcon icon="edit-2" size={18} />
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div className="d-flex align-items-center gap-3">
-                      <Form.Check type="checkbox" className="m-0 form-check" />
-                      <div className="table__has-img d-flex align-items-center gap-3">
-                        <div className="img-box" title="OR">
-                          <img src="" alt="" />
-                        </div>
-                        <span className="text-black">Olivia Rhye</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div className="success-badge hasDot">Active</div>
-                  </td>
-                  <td>
-                    <span className="text-grey">Product Designer</span>
-                  </td>
-                  <td>
-                    <span className="text-grey">olivia@untitledui.com</span>
-                  </td>
-                  <td>
-                    <span className="text-grey">12/01/2022</span>
-                  </td>
-                  <td>
-                    <span className="text-grey">Australia</span>
-                  </td>
-                  <td>
-                    <Form.Check type="switch" className="form-switch" />
-                  </td>
-                  <td>
-                    <div className="d-flex align-items-center gap-3">
-                      <button className="btn border-0 p-0 btn-auto" disabled>
-                        <FeatherIcon icon="trash-2" size={18} />
-                      </button>
-                      <button className="btn border-0 p-0 btn-auto">
-                        <FeatherIcon icon="edit-2" size={18} />
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div className="d-flex align-items-center gap-3">
-                      <Form.Check type="checkbox" className="m-0 form-check" />
-                      <div className="table__has-img d-flex align-items-center gap-3">
-                        <div className="img-box" title="OR">
-                          <img src="" alt="" />
-                        </div>
-                        <span className="text-black">Olivia Rhye</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div className="success-badge hasDot">Active</div>
-                  </td>
-                  <td>
-                    <span className="text-grey">Product Designer</span>
-                  </td>
-                  <td>
-                    <span className="text-grey">olivia@untitledui.com</span>
-                  </td>
-                  <td>
-                    <span className="text-grey">12/01/2022</span>
-                  </td>
-                  <td>
-                    <span className="text-grey">Australia</span>
-                  </td>
-                  <td>
-                    <Form.Check type="switch" className="form-switch" />
-                  </td>
-                  <td>
-                    <div className="d-flex align-items-center gap-3">
-                      <button className="btn border-0 p-0 btn-auto" disabled>
-                        <FeatherIcon icon="trash-2" size={18} />
-                      </button>
-                      <button className="btn border-0 p-0 btn-auto">
-                        <FeatherIcon icon="edit-2" size={18} />
-                      </button>
+                      </Link>
                     </div>
                   </td>
                 </tr>

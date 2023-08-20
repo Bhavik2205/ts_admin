@@ -6,7 +6,7 @@ const Dashboard = () => {
   return (
     <div className="app__wrapper">
       <Container fluid>
-        <div className="padding__container">
+        <div className="padding__container h-auto py-5">
           <Row className="gy-5">
             <Col md={12} lg={7}>
               <div

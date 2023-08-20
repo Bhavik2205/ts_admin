@@ -7,8 +7,31 @@
 
 body {
   background-color: #fff;
-  font-family: "Inter", sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 14px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 2px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+
+.h-auto {
+  height: auto !important;
+  min-height: auto !important;
+}
+
+.h-auto {
+  height: auto !important;
+  min-height: auto !important;
 }
 
 .fs-24 {
@@ -70,6 +93,9 @@ a {
 
 .btn-border {
   padding: 6px 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: #fff !important;
   color: #000 !important;
   border-color: rgba(208, 213, 221, 1) !important;
@@ -114,7 +140,6 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.75);
   color: #fff !important;
   box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.25);
-
 }
 
 .page__wrapper {
@@ -129,7 +154,7 @@ a {
   width: 100%;
   min-width: 100%;
   min-height: 100vh;
-  padding: 30px 0;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,26 +164,30 @@ a {
 .app__wrapper {
   position: relative;
   width: 100%;
-  padding: 30px 65px;
+  padding: 0 65px;
 }
 
 .padding__container {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  padding: 50px 0;
+  min-height: calc(100vh - 60px);
+  padding: 10px 0;
 }
 
-@media (max-width: 992px) {
+.padding__container.has_remove-scroll {
+  min-height: calc(100vh - 110px);
+}
+
+/* @media (max-width: 992px) {
   .app__wrapper {
     padding: 30px 0;
   }
-}
+} */
 
 .logo {
   width: 184px;
   height: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 /* MODAL CONFIGURATION */
@@ -171,14 +200,8 @@ a {
 
 /* PAGINATION CONFIGURATION */
 .pagination__box--wrapper {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
   width: 100%;
-  margin-top: 50px;
-  padding-top: 20px;
-  /* border-top: 1px solid #000; */
 }
 
 .pagination {
@@ -261,8 +284,8 @@ table td {
 }
 
 table td {
-  padding-top: 16px !important;
-  padding-bottom: 16px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
 }
 
 .table__has-img .img-box {

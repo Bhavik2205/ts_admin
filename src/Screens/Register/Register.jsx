@@ -16,7 +16,7 @@ const Register = () => {
               <div className="mb-5">
                 <h5 className="fs-24 m-0">Create an Account</h5>
               </div>
-              <Row className="gy-4">
+              <Row className="gy-2">
                 <Col xs={12}>
                   <div className={formStyle.formGroup}>
                     <label htmlFor="" className={formStyle.labelText}>

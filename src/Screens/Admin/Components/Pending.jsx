@@ -4,9 +4,9 @@ import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 
 const Pending = () => {
   return (
-    <div className="padding__container d-flex flex-column align-item-center justify-content-between">
+    <div className="padding__container h-auto d-flex flex-column align-item-center justify-content-between">
       <div>
-        <Row className="g-4 align-items-end mb-5">
+        <Row className="g-4 align-items-end mb-3">
           <Col lg={12} xl={6}>
             <Row className="g-4 align-items-center">
               <Col md={12} lg={4}>
